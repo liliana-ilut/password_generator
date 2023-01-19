@@ -17,10 +17,24 @@ for n in range(0, len(student_heights)):
 
 
 #Write your code below this row 👇
+
 heights_sum = 0
 for height in student_heights:
     heights_sum = int(height) + heights_sum
 # print(heights_sum)
-heights_average = round(heights_sum / len(student_heights))
-print(f"The average student heights it is {heights_average} centimeters.")    
+
+number_of_students = 0
+for student in student_heights:
+    number_of_students = 1 + number_of_students
+# print(number_of_students) 
+
+heights_average = round(heights_sum / number_of_students)
+print(f"The average student heights it is {heights_average} centimeters.")
+
+
+# method 2: w/o for loop
+# number_of_students = len(student_heights)
+# average_height = round(sum(student_heights) / number_of_students)
+# print(average_height)
+
 
